@@ -1,3 +1,4 @@
+from config import api_key
 import speech_recognition as sr
 import datetime
 import pyttsx3
@@ -8,7 +9,7 @@ import keyboard
 import time
 
 listener = sr.Recognizer()
-api_key = 'AIzaSyAOXBZeUaR6gd5Mwo5fe-b42X7vuAiXft4'
+
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 engine = pyttsx3.init('sapi5')
